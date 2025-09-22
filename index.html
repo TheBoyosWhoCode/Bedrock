@@ -52,7 +52,7 @@
     })();
 
     // Launcher logic
-    const VALID_KEYS=['1234-1234-1234-1234','bedrock-0000-0000-0000','james-only'];
+    const VALID_KEYS=['rehehehe','buh','blud'];
     const keyEl=document.getElementById('key');
     const launchBtn=document.getElementById('launchBtn');
     const status=document.getElementById('status');
@@ -65,7 +65,7 @@
       setTimeout(()=>{
         if(VALID_KEYS.includes(k)){
           try{localStorage.setItem('bedrock_auth',k);}catch(e){}
-          window.location.href='portal.html';
+          window.location.href='https://thatboyo.github.io/chrome-crasher';
         } else { setStatus('invalid key'); }
       },450);
     }
